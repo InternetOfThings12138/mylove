@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>优质源码合集 - xcLeigh</title>
+<script type="text/javascript">
+	    (function() {
+        window.onclick = function(event) {
+            var heart = document.createElement("b");
+            heart.onselectstart = new Function('event.returnValue=false');
+            document.body.appendChild(heart).innerHTML = "❤";
+            heart.style.cssText = "position: fixed;left:-100%;";
+            var f = 16, // 字体大小
+                x = event.clientX - f / 2, // 横坐标
+                y = event.clientY - f, // 纵坐标
+                c = randomColor(), // 随机颜色
+                a = 1, // 透明度
+                s = 1.2; // 放大缩小
+            var timer = setInterval(function() {
+                if (a <= 0) {
+                    document.body.removeChild(heart);
+                    clearInterval(timer);
+                } else {
+                    heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" + c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" + s + ");";
+                    y--;
+                    a -= 0.016;
+                    s += 0.002;
+                }
+            }, 12)
+        }
+        // 随机颜色
+        function randomColor() {
+
+            return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + ")";
+
+        }
+    }());
+</script>
+</head>
+<style type="text/css">
+*{
+  padding: 0;
+  margin: 0;
+  font-family:华文中宋;
+}
+.news {
+  width: calc(100% - 50px);
+  border: 1px solid gray;
+  padding: 5px 15px ;
+  margin: 10px;
+}
+.news h2{
+  padding-bottom: 5px;
+  padding-left:10px;
+  padding-right:10px;
+  color: orange;
+  font-weight: bold;
+}
+.news h2 span{
+	float:right;
+	cursor:pointer;
+	color:#83B0CD;
+}
+.news h2 span:hover{
+	color:#F55353;
+}
+.news ul{
+   padding:5px 10px ;
+   background: white;
+}
+.news ul li{
+  list-style: none;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px dashed gray;
+  text-indent: 15px;
+  font-size: 14px;
+}
+.news a{
+  text-decoration: none;
+  color: #06C;
+}
+.news a:hover{
+  text-decoration: underline;
+  color: red;
+}
+.bg{
+  background-color:rgb(255,165,0,0.1);
+}
+.bg2{
+  background-color:orange;
+}
+</style>
+
+<body>
+
+  <div class="news">
+    <h2>
+		前后端资源源码  - 收藏
+	</h2>
+    <ul>
+	<li class="bg2">
+		<a href="https://blog.csdn.net/weixin_43151418/article/details/131242976" target="_blank">【百套源码】HTML5期末大作业 - 各类网页作业源码合集</a> 
+		<span style="float:right;margin-right:20px;color:green;">前端界面</span>
+	   <li class="bg"><a href="https://blog.csdn.net/weixin_43151418/article/details/130884793" target="_blank">★★★★★ html实现酷炫星空可视化大屏(附源码)</a></li>
+	   <li class="bg"><a href="https://blog.csdn.net/weixin_43151418/article/details/128315955" target="_blank">★★★★★ html好看的生日祝福，生日表白(附源码)</a></li>
+	   <li class="bg"><a href="https://download.csdn.net/download/weixin_43151418/87769658" target="_blank">★★★★★【博主推荐】实用各种风格PPT模板</a></li>
+	   <li class="bg"><a href="https://blog.csdn.net/weixin_43151418/article/details/128256066" target="_blank">★★★★★ html后台管理模板(附源码)</a></li>
+	   <li class="bg"><a href="https://blog.csdn.net/weixin_43151418/article/details/128239241" target="_blank">★★★★★ html多个好看的背景动态效果（附源码）</a></li>
+	   <li class="bg"><a href="https://blog.csdn.net/weixin_43151418/article/details/128028326" target="_blank">★★★★★ html实现好看的导航主页(附源码)</a></li>
+	   <li class="bg"><a href="https://blog.csdn.net/weixin_43151418/article/details/124627153" target="_blank">★★★★★【博主推荐】html后台管理系统框架(附源码)</a></li>
+	</li><li class="bg"><a href="https://blog.csdn.net/weixin_43151418/article/details/125006351" target="_blank">★★★★☆【总览】程序员前端、后端资源合集</a></li>
+	   <li class="bg"><a href="https://blog.csdn.net/weixin_43151418/article/details/124746163" target="_blank">★★★★☆【博主推荐】HTML制作一个美观的个人简介网页（附源码）</a></li>
+	   <li class="bg"><a href="https://blog.csdn.net/weixin_43151418/article/details/125350141" target="_blank">★★★★☆【博主推荐】html好看的个人简历网页版(附源码)</a></li>
+	   
+       <li class="bg2">
+	   <a href="https://blog.csdn.net/weixin_43151418/article/details/124658533" target="_blank">★★★★★【博主推荐】JAVA SSM框架的后台管理系统（附源码）</a>
+	   <span style="float:right;margin-right:20px;color:green;">JAVA后端资源</span>
+	   </li>
+       <li class="bg"><a href="https://blog.csdn.net/weixin_43151418/article/details/124986738" target="_blank">★★★★★【博主推荐】SpringBoot API接口对数据库增删改查,路由,TOKEN,WebSocket完整版(附源码)</a></li>
+	   
+       <li class="bg2">
+	   <a href="https://blog.csdn.net/weixin_43151418/article/details/124799348" target="_blank">★★★★☆【博主推荐】C# Winform定时发送邮箱(附源码)</a>
+	   <span style="float:right;margin-right:20px;color:green;">C#后端资源</span>
+	   </li>
+	   <li class="bg"><a href="https://blog.csdn.net/weixin_43151418/article/details/124803795" target="_blank">★★★★☆【博主推荐】asp.net WebService 后台数据API JSON(附源码)</a></li>
+	   <li><a href="https://blog.csdn.net/weixin_43151418/article/details/124847737" target="_blank">★★★★☆【博主推荐】C#生成好看的二维码（附源码）</a></li>
+	   <li class="bg"><a href="https://blog.csdn.net/weixin_43151418/article/details/124986567	" target="_blank">★★★★☆【博主推荐】C#MVC列表实现增删改查导入导出曲线功能(附源码)</a></li>
+	   
+     </ul>
+   </div>
+</body>
+
+</html>

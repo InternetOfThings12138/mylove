@@ -15,14 +15,14 @@
         cursorChar: '|',
         autoInsertCss: true
     });
-		
+
 	/*-- circle progress activate --*/
 		CircleProg('.3年','#00B9E4',$('#circle-1'));
 		CircleProg('.6年','#DF457E',$('#circle-2'));
 		CircleProg('.1500+场','#2FD4BE',$('#circle-3'));
         CircleProg('.1000+场','#D8709E',$('#circle-4'));
 
-		
+
 	/*--- function for Circle progreass var activation ---*/
 		function CircleProg(val,color,selector){
 			selector.append('<span>'+val.substr(1)+'  </span>');
